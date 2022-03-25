@@ -1,3 +1,9 @@
+<!-- Készítsen egy html oldalt, melynek tartalma egy kép és egy gomb.
+Az oldal betöltődésekor valamint a gombra kattintáskor indítson egy Ajax kérést az alábbi oldalra:
+https://aws.random.cat/meow
+Az oldal válaszban 1 json objektumot fog küldeni, amely objektumnak file adattagja egy véletlen kép url-je lesz.
+Az oldalon található kép forrásának a válaszban kapott url-t adja meg. -->
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -5,8 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajax get</title>
+    <script src="kepet_ker.js"></script>
 </head>
 <body>
-    
+    <img id="kep" src="" alt="Véletlenszerű kép" style="width: 500px;"><br>
+    <button onclick="ujkep()">Új képet kérek!</button>
 </body>
 </html>
