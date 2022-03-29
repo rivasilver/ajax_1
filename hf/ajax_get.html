@@ -4,6 +4,8 @@ https://aws.random.cat/meow
 Az oldal válaszban 1 json objektumot fog küldeni, amely objektumnak file adattagja egy véletlen kép url-je lesz.
 Az oldalon található kép forrásának a válaszban kapott url-t adja meg. -->
 
+<!-- Ez nagyon sok időbe telt. Benne hagyom a nem működő próbákat is, csak hogy lássa a tanár úr, hogy nem lustaságból nem adtam le a házit, hanem hülyeségből. -->
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -13,8 +15,40 @@ Az oldalon található kép forrásának a válaszban kapott url-t adja meg. -->
     <title>Ajax get</title>
     <script src="kepet_ker.js"></script>
 </head>
-<body>
+<body onload="ujKep()">
     <img id="kep" src="" alt="Véletlenszerű kép" style="width: 500px;"><br>
-    <button onclick="ujkep()">Új képet kérek!</button>
+    <button id="gomb" onclick="ujKep()">Új képet kérek!</button>
+    <script>
+        // var gomb = document.getElementById("gomb");
+        // gomb.addEventListener('click', ujKep)
+        // // const ujkep = new XMLHttpRequest();
+        // // const data = "https://aws.random.cat/meow"
+        // // function ujKep(data){
+        // //     if (data.target.status == 200) {
+        // //         const valasz = data.target.response;
+        // //         const kep = JSON.parse(valasz);
+        // //         document.getElementById('kep').src = kep.file;
+        // //         console.log(kep);
+        // //     }
+        // // };
+        // // ujkep.open("GET", "https://aws.random.cat/meow");
+        // // ujkep.send();
+        // const ujKepetKer = new XMLHttpRequest();
+        // var ujKep = function(data="https://aws.random.cat/meow") {
+        //     if (data.target.status == 200) {
+        //         const valasz = data.target.response;
+        //         const kep = JSON.parse(valasz);
+        //         document.getElementById('kep').src = kep.file;
+        //     }
+        // };
+        // ujKepetKer.open("GET", "https://aws.random.cat/meow");
+        // ujKepetKer.send();
+        // function ujKep() {
+        //     const xhttp = new XMLHttpRequest();
+        //     xhttp.onload = function() {myFunction(this);}
+        //     xhttp.open("GET", "https://aws.random.cat/meow");
+        //     xhttp.send();
+        // }
+    </script>
 </body>
 </html>
